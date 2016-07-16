@@ -1,12 +1,21 @@
 {
   "name": "gik.website",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
+  "author": "Héctor Menéndez <etor.mx@gik.mx>",
+  "license": "MIT",
+  "keywords": [
+    "gik",
+    "website",
+    "feliz"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/nodemon -i ./node_modules -w ./ -e html,css,json,js",
+    "precommit": "./node_modules/.bin/feliz.hooks pre-commit"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "feliz.hooks": "0.0.4",
+    "husky": "^0.11.5"
+  }
 }
