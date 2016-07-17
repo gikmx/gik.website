@@ -1,0 +1,74 @@
+@import 'common/master';
+
+html, body {
+    height:100%;
+}
+
+main, #video, #logo, #video img, #video video, #logo object {
+    display  : block;
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    width    : 100%;
+    height   : 100%;
+}
+
+main {
+    overflow: hidden;
+}
+
+#logo {
+    z-index:1;
+
+    & object {
+        top       : 50%;
+        left      : 50%;
+        height    : auto;
+        transform : translate(-50%, -50%);
+        /* keep the logo proportional to the window size */
+        width     : 66%;
+        @media (--tablet){ width:50% }
+        @media (--desktop){ width:40% }
+        @media (--desktop-wide){ width:30% }
+    }
+}
+
+#video {
+    z-index:0;
+    & :matches(img, video){
+        /* center element on screen */
+        top       : 50%;
+        left      : 50%;
+        transform : translate(-50%, -50%);
+        /* Always fill the screen */
+        width  : auto;
+        height : 100%;
+        @media (--mobile-landscape) {
+            width  : 100%;
+            height : auto;
+        }
+        @media (--tablet-landscape){
+            width  : 100%;
+            height : auto;
+        }
+        @media (--desktop){
+            width: auto;
+            height: 100%;
+        }
+        @media (min-width:1700px){
+            width     : 100%;
+            height    : auto;
+        }
+    }
+    & video {
+        /* The video should only be visible on desktop */
+        display: none;
+        @media (--desktop){ display: block; }
+    }
+
+    & img {
+        /* The image should only be visible on non desktop */
+        display:block;
+        @media (--desktop){ display: none; }
+    }
+}

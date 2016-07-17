@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-
-    '/': { bundle:'ping' }
-
+    '/'    : { bundle:'root' },
+    '/ping': { bundle:'ping' }
 }

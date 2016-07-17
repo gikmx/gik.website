@@ -1,6 +1,6 @@
 {
   "name": "gik.website",
-  "version": "0.0.3",
+  "version": "0.1.1",
   "description": "http://gik.mx",
   "main": "index.js",
   "author": "Héctor Menéndez <etor.mx@gik.mx>",
@@ -21,6 +21,15 @@
   },
   "dependencies": {
     "feliz": "0.0.9",
-    "feliz.preset-npw": "0.0.3"
+    "feliz.preset-npw": "0.0.5",
+    "normalize.css": "^4.2.0",
+    "postcss-queries": "0.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/hectormenendez/gik.website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hectormenendez/gik.website.git"
   }
 }
