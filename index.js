@@ -6,7 +6,10 @@ const Preset = require('feliz.preset-npw');
 const Package = require('./package.json');
 
 const preset$ = Preset({
-    plugins: { deps: Package.dependencies },
+    plugins: {
+        deps: Package.dependencies,
+        path: PATH.join(__dirname, 'plugins')
+    },
     config : { root: PATH.join(__dirname, 'app') }
 });
 

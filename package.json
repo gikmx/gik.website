@@ -1,6 +1,6 @@
 {
   "name": "gik.website",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "http://gik.mx",
   "main": "index.js",
   "author": "Héctor Menéndez <etor.mx@gik.mx>",
@@ -22,6 +22,7 @@
   "dependencies": {
     "feliz": "0.0.9",
     "feliz.preset-npw": "0.0.6",
+    "h2o2": "^5.1.0",
     "normalize.css": "^4.2.0",
     "postcss-queries": "0.0.3"
   },
