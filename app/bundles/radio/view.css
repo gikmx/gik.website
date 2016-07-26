@@ -21,7 +21,7 @@ h1 {
     top: 50%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -133%);
+    transform: translate(-50%, 33%);
     text-align:center;
     margin:0;
     line-height:0.75em;
