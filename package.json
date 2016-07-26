@@ -1,6 +1,6 @@
 {
   "name": "gik.website",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "http://gik.mx",
   "main": "index.js",
   "author": "Héctor Menéndez <etor.mx@gik.mx>",
@@ -24,7 +24,8 @@
     "feliz.preset-npw": "0.0.6",
     "h2o2": "^5.1.0",
     "normalize.css": "^4.2.0",
-    "postcss-queries": "0.0.3"
+    "postcss-queries": "0.0.3",
+    "socket.io-client": "^1.4.8"
   },
   "bugs": {
     "url": "https://github.com/hectormenendez/gik.website/issues"
