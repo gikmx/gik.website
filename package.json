@@ -1,6 +1,6 @@
 {
   "name": "gik.website",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "http://gik.mx",
   "main": "index.js",
   "author": "Héctor Menéndez <etor.mx@gik.mx>",

@@ -1,10 +1,26 @@
 {% extends 'common/master/index.html' %}
 {% block body %}
-	<h1>
-		<span>Radio GIK</span>
-	</h1>
-	<audio controls autoplay>
-		<source src="http://stream.gik.mx" type="audio/ogg">
-		Your browser does not support the audio element.
-	</audio>
+    <section>
+        <h1>
+            <span>Radio GIK</span>
+        </h1>
+
+        <div class="audiojsZ">
+            <audio src="http://stream.gik.mx/radio.mp3" preload="none" autoplay></audio>
+            <div class="play-pauseZ">
+                <p class="playZ"></p>
+                <p class="pauseZ"></p>
+                <p class="loadingZ"></p>
+                <p class="errorZ"></p>
+            </div>
+            <div class="scrubberZ">
+                <div class="progressZ"></div>
+                <div class="loadedZ"></div>
+            </div>
+            <div class="timeZ">
+                <em class="playedZ">00:00</em>/<strong class="durationZ">00:00</strong>
+            </div>
+            <div class="error-messageZ"></div>
+        </div>
+    </section>
 {% endblock%}
