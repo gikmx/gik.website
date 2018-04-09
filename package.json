@@ -1,0 +1,16 @@
+{
+  "name": "@gik/site",
+  "version": "0.2.0",
+  "description": "https://gik.mx",
+  "author": "Héctor Menéndez <hector@gik.mx>",
+  "license": "ISC",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gikmx/site"
+  },
+  "scripts": {
+    "pull": "aws s3 sync s3://gik.mx ./public",
+    "push": "aws s3 sync ./public s3://gik.mx"
+  }
+}
